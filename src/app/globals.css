@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ---------- Light theme ---------- */
+@plugin "daisyui/theme" {
+  name: "helphive";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: oklch(99% 0.006 95);
+  --color-base-200: oklch(96% 0.014 150);
+  --color-base-300: oklch(91% 0.02 150);
+  --color-base-content: oklch(27% 0.035 200);
+  --color-primary: oklch(52% 0.11 185);
+  --color-primary-content: oklch(98% 0.01 185);
+  --color-secondary: oklch(82% 0.16 85);
+  --color-secondary-content: oklch(27% 0.05 85);
+  --color-accent: oklch(68% 0.17 35);
+  --color-accent-content: oklch(98% 0.01 35);
+  --color-neutral: oklch(30% 0.05 195);
+  --color-neutral-content: oklch(96% 0.01 150);
+  --color-info: oklch(70% 0.13 235);
+  --color-info-content: oklch(20% 0.04 235);
+  --color-success: oklch(68% 0.16 150);
+  --color-success-content: oklch(20% 0.05 150);
+  --color-warning: oklch(82% 0.16 85);
+  --color-warning-content: oklch(27% 0.05 85);
+  --color-error: oklch(62% 0.21 25);
+  --color-error-content: oklch(98% 0.01 25);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.9rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+/* ---------- Dark theme ---------- */
+@plugin "daisyui/theme" {
+  name: "helphive-dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: oklch(22% 0.03 200);
+  --color-base-200: oklch(19% 0.03 200);
+  --color-base-300: oklch(15% 0.03 200);
+  --color-base-content: oklch(93% 0.015 150);
+  --color-primary: oklch(74% 0.12 180);
+  --color-primary-content: oklch(20% 0.04 185);
+  --color-secondary: oklch(82% 0.16 85);
+  --color-secondary-content: oklch(27% 0.05 85);
+  --color-accent: oklch(72% 0.16 35);
+  --color-accent-content: oklch(20% 0.05 35);
+  --color-neutral: oklch(17% 0.03 200);
+  --color-neutral-content: oklch(93% 0.015 150);
+  --color-info: oklch(72% 0.13 235);
+  --color-info-content: oklch(20% 0.04 235);
+  --color-success: oklch(72% 0.16 150);
+  --color-success-content: oklch(20% 0.05 150);
+  --color-warning: oklch(82% 0.16 85);
+  --color-warning-content: oklch(27% 0.05 85);
+  --color-error: oklch(68% 0.2 25);
+  --color-error-content: oklch(18% 0.05 25);
+  --radius-selector: 1rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.9rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@theme inline {
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* One heading style used by every section title */
+.section-heading {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Soft dotted background used in the banner */
+.dot-pattern {
+  background-image: radial-gradient(color-mix(in oklab, var(--color-primary) 22%, transparent) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
