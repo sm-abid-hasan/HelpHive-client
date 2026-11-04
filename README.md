@@ -1,32 +1,39 @@
 # HelpHive
 
-A community-driven platform where people create, join and track social service events in their local area, such as winter clothes distribution, blanket distribution, plantation drives and cleanups.
+**HelpHive** is a community-driven event management platform that helps people organise, discover, and participate in local social-service activities. Users can create events such as winter clothing distributions, food drives, plantation programmes, blood donation campaigns, and community cleanups. Volunteers can browse upcoming events, join activities, and keep track of their commitments.
 
-**Live site:** https://your-live-site-url.vercel.app  <!-- replace with your real URL after deployment -->
+The application is built with the Next.js App Router and Better Auth. Event data is loaded from a separately running HelpHive API, while MongoDB is used by Better Auth for authentication data.
+
+
+## Technology Stack
+
+### Frontend
+
+- Next.js 15
+- React 19
+- JavaScript
+- Tailwind CSS 
+- DaisyUI 
+- Better Auth
+- React Hot Toast
+- React Icons
+
+### Backend and data services
+
+- Express.js API 
+- MongoDB
+- Better Auth MongoDB adapter and JWT plugin
+- Google OAuth (optional; requires Google OAuth credentials)
 
 ## Features
 
-- Create events with title, type, location, thumbnail and a future-only date.
-- Browse upcoming events with search by title or location and a filter by event type.
-- Join an event with one click. Your joined events are listed on a separate page, sorted by date.
-- Manage your own events: update or delete them. Only the creator can change an event.
-- Secure email and password login plus GitHub login, with protected routes that survive a page reload.
-- Light and dark theme toggle that changes the whole website.
-- Loading skeletons on every data page, and a profile page to update your name and photo.
-
-## Tech stack
-
-Next.js (App Router), Tailwind CSS, daisyUI, Better Auth (MongoDB adapter + JWT plugin), Express.js, MongoDB.
-
-## Run it locally
-
-1. Install packages: `npm install`
-2. Copy `.env.example` to `.env.local` and fill in every value.
-3. Start the API server first (see `../server/README.md`).
-4. Start this app: `npm run dev` and open http://localhost:3000
-
-## Deploy
-
-1. Push to GitHub and import the `client` folder into Vercel.
-2. Add all variables from `.env.example` in Vercel. Set `BETTER_AUTH_URL` to your live URL and `NEXT_PUBLIC_API_URL` to your live server URL.
-3. In your GitHub OAuth App, set the callback URL to `https://<your-live-url>/api/auth/callback/github`.
+1. **Community Event Discovery** — Browse upcoming community-service events, view event information, and explore activities by category.
+2. **Event Search and Filtering** — Search events by title or location and filter the results by event type.
+3. **Event Creation and Management** — Signed-in users can create events with a title, description, category, image URL, location, and event date. Organisers can edit or delete their own events.
+4. **Event Participation** — Signed-in users can join available events, view their joined events, and leave events they no longer plan to attend.
+5. **User Authentication** — Register and sign in with email and password, or use Google sign-in when Google OAuth credentials are configured.
+6. **Protected User Pages** — Create Event, Manage Events, Joined Events, and My Profile pages require an authenticated session.
+7. **Profile Management** — View account information and update the profile name. A profile image URL can be supplied during registration.
+8. **Light and Dark Themes** — Switch between light and dark colour themes; the selected theme is saved in browser local storage.
+9. **Responsive Interface** — Responsive layouts support desktop, tablet, and mobile screen sizes.
+10. **Loading and Feedback States** — Data pages include loading skeletons, empty states, error messages, retry actions, and toast notifications.
