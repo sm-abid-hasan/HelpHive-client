@@ -1,4 +1,4 @@
-# HelpHive
+# HelpHive Client
 
 **HelpHive** is a community-driven event management platform that helps people organise, discover, and participate in local social-service activities. Users can create events such as winter clothing distributions, food drives, plantation programmes, blood donation campaigns, and community cleanups. Volunteers can browse upcoming events, join activities, and keep track of their commitments.
 
