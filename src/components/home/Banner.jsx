@@ -9,7 +9,7 @@ import Container from "@/components/common/Container";
 export default function Banner() {
   return (
     <section className="relative overflow-hidden bg-base-200">
-      <div className="dot-pattern absolute inset-0 opacity-70" aria-hidden="true"></div>
+      <div ></div>
 
       <Container className="relative grid items-center gap-12 py-16 md:py-24 lg:grid-cols-2">
         
