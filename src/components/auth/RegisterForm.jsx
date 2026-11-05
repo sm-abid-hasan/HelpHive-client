@@ -141,7 +141,7 @@ export default function RegisterForm() {
               placeholder="At least 6 characters, uppercase & lowercase"
             />
 
-            {/* Live Password Condition Checklist */}
+         
             <div className="mt-2.5 space-y-1.5 text-xs">
               <p className={`flex items-center gap-2 transition-colors ${hasLength ? "text-success font-medium" : "opacity-60"}`}>
                 <span>{hasLength ? "✅" : "⚪"}</span> At least 6 characters
