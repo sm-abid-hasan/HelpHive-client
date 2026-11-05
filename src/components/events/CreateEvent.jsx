@@ -30,7 +30,7 @@ export default function CreateEvent() {
       <SectionTitle
         as="h1"
         title="Create a new event"
-        subtitle="Share the details and let your neighbours join you. Only future dates are allowed."
+        
       />
       <EventForm minDate={tomorrowInputDate()} onSubmit={handleCreate} submitLabel="Create event" loading={saving} />
     </Container>
