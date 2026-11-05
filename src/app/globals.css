@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* ---------- Light theme ---------- */
+
 @plugin "daisyui/theme" {
   name: "helphive";
   default: true;
@@ -37,7 +37,7 @@
   --noise: 0;
 }
 
-/* ---------- Dark theme ---------- */
+
 @plugin "daisyui/theme" {
   name: "helphive-dark";
   default: false;
@@ -86,7 +86,7 @@ body {
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
 }
 
-/* One heading style used by every section title */
+
 .section-heading {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   font-weight: 800;
@@ -94,14 +94,4 @@ body {
   letter-spacing: -0.01em;
 }
 
-/* Soft dotted background used in the banner */
-.dot-pattern {
-  background-image: radial-gradient(color-mix(in oklab, var(--color-primary) 22%, transparent) 1.5px, transparent 1.5px);
-  background-size: 22px 22px;
-}
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
