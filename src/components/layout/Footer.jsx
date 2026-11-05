@@ -93,6 +93,10 @@ export default function Footer() {
           © {new Date().getFullYear()} HelpHive. Made with care for our communities.
         </Container>
       </div>
+      <div>
+
+        
+      </div>
     </footer>
   );
 }
