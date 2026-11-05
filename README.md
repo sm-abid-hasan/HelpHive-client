@@ -4,7 +4,7 @@
 
 The application is built with the Next.js App Router and Better Auth. Event data is loaded from a separately running HelpHive API, while MongoDB is used by Better Auth for authentication data.
 
-[HelpHive Live Site] (https://help-hive-client.vercel.app/)
+### HelpHive Live Site: (https://help-hive-client.vercel.app/)
 
 
 ## Technology Stack
